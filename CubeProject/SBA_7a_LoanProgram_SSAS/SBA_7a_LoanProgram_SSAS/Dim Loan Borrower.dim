@@ -1,0 +1,382 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dd192771-007b-41ee-8945-460248ccd29c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Loan Borrower</ID>
+  <Name>Dim Loan Borrower</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1980" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11811" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLoanBorrower" left="-1483" top="-4022" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLoanBorrower" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1980</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1483</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4022</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9590f8b4-b34a-40c9-8b0a-4a566b432f5d">
+    <DataSourceViewID>DSV_SBA_7a_LoanProgram_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="f69e612b-f5c8-4f88-bdbe-f5e126c1b116">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b5616759-6bd0-4031-9c60-1a7d6862aef2">
+      <ID>Loan Borr SK</ID>
+      <Name>Loan Borr SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e49ece3b-8ba3-48d9-8ce1-8aaf1ed8db3b">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee81ae6a-59bb-44ab-8d84-93e102f00aac">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>LoanBorrSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3d4efc52-50c7-4ebb-abb6-0227c3d620d5">
+          <AttributeID>Alternate Loan Borr ID</AttributeID>
+          <Name>Alternate Loan Borr ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d5068475-5355-4858-b1c0-c2ef50398055">
+          <AttributeID>Borr Name</AttributeID>
+          <Name>Borr Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="466d4d94-c6b6-4137-abc7-7a8cf2c42625">
+          <AttributeID>Borr Street</AttributeID>
+          <Name>Borr Street</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6268ad03-d2db-4574-a458-cd91f1b49431">
+          <AttributeID>Borr City</AttributeID>
+          <Name>Borr City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fc2fcc43-783d-4f4d-b411-9326852dc53e">
+          <AttributeID>Borr State</AttributeID>
+          <Name>Borr State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24eb50f8-ba4d-43a6-a979-2bcd975324da">
+          <AttributeID>Borr Zip</AttributeID>
+          <Name>Borr Zip</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="95554d88-1a05-44bd-acaa-be081aae48ed">
+          <AttributeID>Business Type</AttributeID>
+          <Name>Business Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fd6ffcdf-c8a0-4061-9538-03dee4a84102">
+          <AttributeID>Franchise Code</AttributeID>
+          <Name>Franchise Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d7d0430-c0ff-4d8d-b8a9-8edbb87287f3">
+          <AttributeID>Franchise Name</AttributeID>
+          <Name>Franchise Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="615f8c73-d14f-4345-9645-e1f5bd4cb4f6">
+          <AttributeID>Start Date</AttributeID>
+          <Name>Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d4739ea-ba03-41c4-aa8b-6b55555f1422">
+          <AttributeID>End Date</AttributeID>
+          <Name>End Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d0a40cb-a134-4386-bab1-82095d11473a">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fdf5ec77-4d42-48b2-8102-36f040eceac8">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="44d3be47-99b6-4f72-9cab-58f7799d5a9d">
+      <ID>Alternate Loan Borr ID</ID>
+      <Name>Alternate Loan Borr ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee63d870-191e-43c1-8961-b9662aec8dbb">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a034cc2c-102f-478c-bcb5-4ed224e15943">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>AlternateLoanBorrID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="079c256f-795a-443a-8f99-9ebebcc1f2b9">
+      <ID>Borr Name</ID>
+      <Name>Borr Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="651ddbd9-c600-41ec-b8ca-e4d8aba6de5c">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6b24062-bd57-4229-9558-516eeb4b3fcd">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>BorrName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f260634b-f673-42ef-8b19-9ee28ad7f934">
+      <ID>Borr Street</ID>
+      <Name>Borr Street</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f1a355ca-bff5-47fe-a262-5227caf12a53">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ce3a978-da72-4915-ae7e-399d626f06eb">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>BorrStreet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d340fc4e-f569-4d54-8f35-3375eb6079fa">
+      <ID>Borr City</ID>
+      <Name>Borr City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3329dc6f-45b3-490c-80ee-fd22b562cf4c">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22f2f3f8-a407-4b69-bc8f-1a2abf033305">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>BorrCity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0600d298-ef16-4e7a-9af2-8e49e635858d">
+      <ID>Borr State</ID>
+      <Name>Borr State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94d22b81-ac0d-4663-b4b8-c96446f556ca">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4cfae61-5e33-447d-821c-f08bc354a218">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>BorrState</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2aec5637-81ae-409f-896a-be6dfc7787a9">
+      <ID>Borr Zip</ID>
+      <Name>Borr Zip</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="292f4d7c-f737-40b6-b58e-2575bedf8203">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31b8b61f-cad7-4889-8a8e-03e7c8d60ca5">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>BorrZip</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e3610243-37c3-4524-b308-64f1b4d8202a">
+      <ID>Business Type</ID>
+      <Name>Business Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d972a90b-ac75-4db2-b07b-2718c6b1ebab">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="854b2240-ab24-4d2c-a7bd-5fe98cd3c919">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>BusinessType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="239c7a84-daf2-44b7-9178-214168e203ac">
+      <ID>Franchise Code</ID>
+      <Name>Franchise Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db7ef02d-7363-461a-a5de-41e9e9679daf">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7bc06ad5-738e-4c04-8e67-32487661dca8">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>FranchiseCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ea858ebc-dbd6-431a-a2db-8c05010512e0">
+      <ID>Franchise Name</ID>
+      <Name>Franchise Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d35b31e-521b-4a2b-a296-2f902303a71b">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="716e4466-cbf5-41ce-9101-b7b6c416c34b">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>FranchiseName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="86f23dd5-a40c-4a0b-9083-e33e62b9ff36">
+      <ID>Start Date</ID>
+      <Name>Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ff68d0d9-3624-4cd3-bbbf-c5ba2587065c">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a8fd88f-0355-4974-b9b3-6a0182b83fc4">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>StartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f4befbe2-af81-4567-a37f-115ad3556e7c">
+      <ID>End Date</ID>
+      <Name>End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4a4fb32f-c87b-40b7-b602-76cd073cfc75">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ccb3e7b5-eae5-49c7-937e-155151b7b583">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>EndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0fa0dee-065d-46af-9852-973bfabf6c7f">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="720e46d3-d194-4b8b-95a9-a5b35f0114a5">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43391423-2ee0-470a-83f6-f52ce0b36afd">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>InsertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a1745dc-094f-40b3-a1de-9fc9f334f42d">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ff39e25-9df2-4d80-81ba-3a5d613e164e">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cab2632a-4a3e-4691-b4c1-1d0e59454f49">
+            <TableID>dbo_DimLoanBorrower</TableID>
+            <ColumnID>ModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="856513ce-b003-4a7a-99dd-17cfeae4c8f5">
+      <ID>Hierarchy</ID>
+      <Name>BorrowerLocation</Name>
+      <Levels>
+        <Level dwd:design-time-name="7a387e23-7b21-4e06-b124-a417e1a1029e">
+          <ID>Borr State</ID>
+          <Name>Borr State</Name>
+          <SourceAttributeID>Borr State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c75e4bc4-4d6c-4e94-ae60-a7b6fd6fa115">
+          <ID>Borr City</ID>
+          <Name>Borr City</Name>
+          <SourceAttributeID>Borr City</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a299ac88-419c-4088-a495-f157c9e84489">
+          <ID>Borr Street</ID>
+          <Name>Borr Street</Name>
+          <SourceAttributeID>Borr Street</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

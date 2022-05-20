@@ -1,0 +1,283 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7c7a4c0d-4779-4d5f-85cf-8d8579ea105a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Bank Lender</ID>
+  <Name>Dim Bank Lender</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2266" scrolltop="-5175" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13504" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimBankLender" left="-1737" top="-4551" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3239" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a70c00000a100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimBankLender" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2266</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5175</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1737</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4551</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7b16950c-9bad-4e99-87bc-fc2470cc828f">
+    <DataSourceViewID>DSV_SBA_7a_LoanProgram_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="1c1e0810-da2f-4d67-be73-5ea0cd4564d6">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="8fd8e367-7d03-48eb-9e68-ca2b47a0780d">
+      <ID>Bank Lender SK</ID>
+      <Name>Bank Lender SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ac53f5fa-6691-4009-831d-ed60f770de39">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="167a4807-e007-40e4-8b29-4e87f8a59b1b">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>BankLenderSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4b38edd0-a99b-453f-80b2-526c9566efea">
+          <AttributeID>Alternate Bank ID</AttributeID>
+          <Name>Alternate Bank ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="55549da9-56bc-4eff-aca3-820149e6e410">
+          <AttributeID>Bank Name</AttributeID>
+          <Name>Bank Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="03b8e87b-163a-4ec3-a57a-6eee91ea3cfc">
+          <AttributeID>Bank Street</AttributeID>
+          <Name>Bank Street</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc66d0e6-319f-4c89-b0c7-7f12b426474e">
+          <AttributeID>Bank City</AttributeID>
+          <Name>Bank City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="28fab021-47cd-4a7c-af7e-3cb7124d0c1d">
+          <AttributeID>Bank State</AttributeID>
+          <Name>Bank State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="76c742fa-adb4-4562-9f71-fcb35b5173c6">
+          <AttributeID>Bank Zip</AttributeID>
+          <Name>Bank Zip</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d01f38e8-6225-47ed-b71d-d43ac7cf3445">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b71d6383-2ec8-4a07-9b99-f0f504ba0f65">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1eea1882-1c5c-4254-83dc-fc81ae10533d">
+      <ID>Alternate Bank ID</ID>
+      <Name>Alternate Bank ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a952e0eb-b865-4bf7-974c-4df2f6aa503f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d217f21-3d39-4e14-ae67-e733df0fce2b">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>AlternateBankID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9f97790-708a-4bc7-b9a3-558ed993e371">
+      <ID>Bank Name</ID>
+      <Name>Bank Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="acc916c2-7b92-4d69-9d39-421965bbb23b">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea947beb-363b-44c3-b090-2946f6b328c0">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>BankName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="05fb0c6f-f7f6-401e-ad9a-d3470d1ffb7c">
+      <ID>Bank Street</ID>
+      <Name>Bank Street</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="836662da-4ea4-456c-a33f-e93a0a3ed804">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8fe3376d-0f82-48c7-a405-7584514f7732">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>BankStreet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f141d04b-2e07-407c-bb9f-12eb9d419ad7">
+      <ID>Bank City</ID>
+      <Name>Bank City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="59350ffb-1caa-46bc-8eff-1e98f9502a52">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a8fdedf-ec58-4281-bfb0-19b853e9b325">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>BankCity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8a4a08c6-7414-48c0-acec-08ca672685db">
+      <ID>Bank State</ID>
+      <Name>Bank State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a26a0f9-57b6-4e67-9edc-15058342a2c3">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df4bf9f5-91ad-4bd1-976a-e0ec9196ffcb">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>BankState</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="32ed0589-cab7-4f3b-ae92-74b0e8c55674">
+      <ID>Bank Zip</ID>
+      <Name>Bank Zip</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fbde55d8-8d92-410a-bc28-f637431ba530">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63fb1d3d-0716-4a73-8f9c-1fd13e3fe1d9">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>BankZip</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fcfc02d-43e4-473f-aedc-ceb39b7a541c">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="baa0ee4b-84d7-4fc0-a99c-35120bb7abe4">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfec3989-1a41-4080-9030-481d978a6b94">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>InsertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="602facb1-03fa-4821-aee7-4d712fc89498">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c35e6f10-58f1-4760-8c37-ea10d6d7f283">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1f25940-cc7a-4523-9850-6f6160858aa8">
+            <TableID>dbo_DimBankLender</TableID>
+            <ColumnID>ModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="30ce9ac2-4ad9-4126-973d-49ab8d89723a">
+      <ID>Hierarchy</ID>
+      <Name>BankLocation</Name>
+      <Levels>
+        <Level dwd:design-time-name="348ef4ce-fe58-4157-837c-2dfbde30690c">
+          <ID>Bank State</ID>
+          <Name>Bank State</Name>
+          <SourceAttributeID>Bank State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1013a789-37cc-4759-8fe3-814721af6862">
+          <ID>Bank City</ID>
+          <Name>Bank City</Name>
+          <SourceAttributeID>Bank City</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f551169f-cc3b-4cec-b2ef-4eb6a09f0d2f">
+          <ID>Bank Street</ID>
+          <Name>Bank Street</Name>
+          <SourceAttributeID>Bank Street</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

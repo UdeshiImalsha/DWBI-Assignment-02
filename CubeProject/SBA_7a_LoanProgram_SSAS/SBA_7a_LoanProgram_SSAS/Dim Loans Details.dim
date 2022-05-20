@@ -1,0 +1,296 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a9304a3f-7405-484e-a7bc-62043abcfaae" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Loans Details</ID>
+  <Name>Dim Loans Details</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1885" scrolltop="-4815" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7811" y="14457" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLoansDetails" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4001" height="4826" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a10f0000da120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLoansDetails" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1885</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4815</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="376da517-ca9b-4ef5-978f-a6cf553aba76">
+    <DataSourceViewID>DSV_SBA_7a_LoanProgram_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="8a1238b9-0e79-47d6-94b2-c1277d65d15d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="f50ddae6-b4fe-4e38-83fe-07610c81ed17">
+      <ID>Loan Detail SK</ID>
+      <Name>Loan Detail SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7692ecc8-e79b-49ec-ac22-cac85c464c05">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="583f086a-1058-45a1-b0ae-3e48b004cf49">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>LoanDetailSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6e88dd77-e08a-4b16-af84-70fb4c4d1381">
+          <AttributeID>Alternate Loan Detail ID</AttributeID>
+          <Name>Alternate Loan Detail ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8113e590-949d-41f2-8191-759a6215e14b">
+          <AttributeID>NAICS Code</AttributeID>
+          <Name>NAICS Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7b17bf43-1c61-47ae-83f8-60c756cefc32">
+          <AttributeID>NAICS Description</AttributeID>
+          <Name>NAICS Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2ff1d872-6d6e-4c8b-8f11-4e8048919f95">
+          <AttributeID>Loan Status</AttributeID>
+          <Name>Loan Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="29f94bbd-5fe9-449d-b8e6-76c5f1bd7cad">
+          <AttributeID>Revolver Status</AttributeID>
+          <Name>Revolver Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d6282c4e-7f2f-4fe1-af2c-1a8a43cefeed">
+          <AttributeID>As Of Date</AttributeID>
+          <Name>As Of Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a36f94ed-8d73-475e-980a-2cd46556368a">
+          <AttributeID>Approval Date</AttributeID>
+          <Name>Approval Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bf4f1e82-d988-4d20-bee0-fdc23211eef9">
+          <AttributeID>Approval Fiscal Year</AttributeID>
+          <Name>Approval Fiscal Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d9e1437d-fe66-4c97-9c47-b1734d9b882d">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="49aebc27-48f3-45b5-a46f-2b5ad7370c92">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0769f176-afad-43ce-926e-815d2f58bf7a">
+      <ID>Alternate Loan Detail ID</ID>
+      <Name>Alternate Loan Detail ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="116c6060-f542-437a-8a84-8e539242dfac">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f434253b-3921-47bc-a134-98a692d3b64b">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>AlternateLoanDetailID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5a9acda9-6c0a-4231-8639-b010277edddc">
+      <ID>NAICS Code</ID>
+      <Name>NAICS Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7609cc8-6e08-4b25-99bc-64ad93d15364">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d46651bf-47b7-4412-b068-61b50a131501">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>NAICSCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="beba21c6-6f80-458e-bf62-f3e2676e5393">
+      <ID>NAICS Description</ID>
+      <Name>NAICS Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09b91710-4a95-4bb3-ae8e-5fd1a4a1088f">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="09c8e6d2-60a4-4ffa-aa50-227b8489e2bf">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>NAICSDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="504cb49b-073a-4ea9-826f-5c90ec0d40d2">
+      <ID>Loan Status</ID>
+      <Name>Loan Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a19288d7-cfa5-4024-a79d-726d46a0d3bd">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c39de958-0192-4cd1-9da9-e0b701c31675">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>LoanStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5e853acd-62b1-453c-b0fc-efd176c77e1e">
+      <ID>Revolver Status</ID>
+      <Name>Revolver Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6a5a7d4b-479b-4acb-bc67-bd1aad209b18">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b2f251e-12e1-4b3b-b48e-d1d9c4587b75">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>RevolverStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="89a334ba-3019-4f43-b1a3-2b7b58715f86">
+      <ID>As Of Date</ID>
+      <Name>As Of Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b898e42b-47cd-45c2-beaa-196b874acafa">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="783804b6-087f-4901-a7cb-0285323e0f67">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>AsOfDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03890a5d-3bae-404d-b385-fd28f941bff1">
+      <ID>Approval Date</ID>
+      <Name>Approval Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c24d5616-59e8-4470-ae61-4290c4cba834">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="622a03d7-ce59-41c5-b14c-abc6ad1dae96">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>ApprovalDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="47e0e4ee-7687-4c2b-a12b-0e0092f4fc99">
+      <ID>Approval Fiscal Year</ID>
+      <Name>Approval Fiscal Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78f6756a-c9cc-4135-ac33-08691a7e1aae">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d056dd1-22a4-42a8-bf37-e71b3bd22adc">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>ApprovalFiscalYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ced9a14-daf6-4c8b-86fa-7b974bddec22">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ec2e6511-24bb-4a83-8029-03d1d45660be">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40de0665-2c18-4170-8ec7-84c7dbd32a85">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>InsertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce8e8729-fba2-4bea-a1c8-a4fccf074510">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a8921cd-0ed8-4c3c-bb65-406b32d3b20f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5c5bae8-be19-4270-88d5-4fb5b66df6e0">
+            <TableID>dbo_DimLoansDetails</TableID>
+            <ColumnID>ModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
